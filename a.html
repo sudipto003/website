@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bank Web Page</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+font-family: 'Times New Roman';
+font-size: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+font-family: 'Times New Roman';
+font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #00FFFF;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+font-family: 'Times New Roman';
+font-size: 16px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+font-family: 'Times New Roman';
+font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>CONTACT US</h2>
+    <p>CALL US IN EMERGENCY,OR LEAVE US A MESSAGE:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="img.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">FIRST NAME</label>
+        <input type="text" id="fname" name="FIRSTAME" placeholder="Your name..">
+        <label for="lname">LAST NAME</label>
+        <input type="text" id="lname" name="LAST NAME" placeholder="Your last name..">
+        <label for="DISTRICT">DISTRICT</label>
+        <select id="District" name="">
+          <option value="Mumbai city">Mumbai city</option>
+          <option value="Mumbai suburban">Mumbai suburban</option>
+          <option value="Navi Mumbai">Navi Mumbai</option>
+        </select>
+        <label for="SUBJECT">SUBJECT</label>
+        <textarea id="subject" name="SUBJECT" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="SUBMIT" value="SUBMIT">
+      </form>
+    </div>
+  </div>
+  <input type="button" value="Go back!" onclick="history.back()">
+</div>
+</body>
+</html>

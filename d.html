@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches of AXIS banch.</title>
+<style>
+    body
+    {
+	margin:0px;
+	padding: 0px;
+	background-color:bisque;
+	font-family: calibri;
+    align-items: center;
+}
+.s-heading
+{
+	text-align:center;
+}
+.s-heading h1{
+	color:#576975;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0px;
+}
+.s-heading p{
+	color: rgba(117, 87, 107, 0.6);
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+.s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-box{
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width:300px;
+	padding: 20px 25px;
+	height: 400px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+    border-color:#009900; 
+    border-style:solid;
+      
+}
+.s-box img{
+	height: 75px;
+}
+.s-box h1{
+	color:#576975;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+	
+}
+.s-box p{
+	color: rgba(87,105,117,0.90);
+	text-align: center;
+}
+.s-btn{
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	border:1px solid rgba(74,144,226,0.50);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#576975;
+	margin-top:10px; 
+}
+.bar{
+	width: 100px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	background-color:#4a90e2; 
+	border-radius: 0px 0px 10px 10px;
+	display: none;
+}
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+}
+.s-btn:hover{
+	background-color:#4a90e2;
+	border: 1px solid #4a90e2;
+	color:#FFFFFF;
+}
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	100%{
+		width:100px;
+	}
+}
+@media(max-width:1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+		
+	}	
+	.services{
+		height: auto;
+	}
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+	
+}
+</style>
+<script type = "text/javascript">  
+	function fun()
+{
+var my = confirm('Do you want to Reset?');
+if( my == true )
+{
+alert(' Thank you .');
+return true;
+}
+else
+{
+alert('Welcome back.');
+return false;
+}
+}
+</script>  
+</head>
+<body>
+<h1 style="text-align:center">BRANCHES</h1>
+<div>
+<form style="text-align:center">
+<p>Select your locality:
+        <select name="Select a place" >
+            <option>ANDHERI</option>
+            <option>BANDRA</option>
+            <option>DADAR</option>
+            <option>CHURCHGATE</option>
+            <option>CST</option>
+        </select>
+    </p>
+	<table style="text-align:center"></table>
+    <h3 title="Choose one">CATEGORIES:</h3>
+	<tr><td>
+    <input type="radio" id="a" name="categories" value="CASH WITHDRWAL">
+    <label for="a">CASH WITHDRWAL</label></td></tr><br>
+    <tr><td>
+    <input type="radio" id="b" name="categories" value="BALANCE ENQUIRY">
+    <label for="b">BALANCE ENQUIRY</label></td></tr><br>
+	<tr><td>	
+    <input type="radio" id="c" name="categories" value="PIN RESETTING">
+    <label for="c">PIN RESET</label></td></tr><br>
+	<tr><td>
+    <input type="radio" id="d" name="categories" value="SETTING MPIN">
+    <label for="d">SET MPIN</label></td></tr><br>
+   </table>
+    </form>
+    <div class="s-box-container">
+	 <div class="s-box">
+    <div class="bar"></div>
+     <h1>AXIS BANK BRANCH,ANDHERI</h1>
+    <p>Address:Ground Floor, Jeevan Prakash Building, Sir PM Road,Andheri, Mumbai, Maharashtra, 400069.   
+    </p>
+         <a class="s-btn" href="#">More</a>
+        </div>
+         <div class="s-box">
+         <div class="bar"></div>
+    
+        <h1>AXIS BANK BRANCH,BANDRA</h1>
+        <p> Address:Shop No 1 to 3, Lokmanya Tilak Marg,,Bandra Mumbai, Maharashtra, 400001
+        </p>
+        <a class="s-btn" href="#">More</a>
+        </div>
+        <div class="s-box">
+        <div class="bar"></div>
+        
+        <h1>AXIS BANK BRANCH,CHURCHGATE</h1>
+        <p>Address: Ground Floor, Jeevan Prakash Building,Churchgate
+        </p>
+        <a class="s-btn" href="#">More</a>
+        </div>
+</div>
+<input type="submit" onclick="alert('Thanks for your response!')" value="Submit">
+ <input type="reset"  value="Reset" onclick="fun();"> 
+ <input type="button" value="Go back!" onclick="history.back()">  
+</body>
+</html>
